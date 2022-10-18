@@ -1,0 +1,19 @@
+.found h1{
+    color: #fffcf2;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-left: 0px;
+
+}
+
+.found {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.found img{
+    margin-left: 25%;
+}

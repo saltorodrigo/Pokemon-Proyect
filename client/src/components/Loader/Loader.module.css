@@ -1,0 +1,16 @@
+.load {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.load h1{
+    color: #fffcf2;
+    text-align: left;
+    width: 50%;
+    margin-left: 725px;
+    margin-bottom: 0px;
+}
+
+.load img{
+    margin-left: 550px;
+}
