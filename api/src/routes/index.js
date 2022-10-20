@@ -9,8 +9,8 @@ router.get('/pokemons', async (req, res) => {
     const name = req.query.name
     let allPokemons = await getAllPokemons()
     if (name) {
-        let namePokemon = await allPokemons.filter((e) => e.name.toLowerCase() === name.toLowerCase())
-        namePokemon.length ?
+        let namePokemon = await allPokemons?.filter((e) => e?.name?.toLowerCase() === name?.toLowerCase())
+        namePokemon?.length ?
             res.status(200).send(namePokemon) :
             res.status(404).send("Pokemon not found")
 
@@ -24,11 +24,11 @@ router.get('/pokemons/:id', async (req, res) => {
     const id = req.params.id
 
     if (id) {
-        if (id.length > 10) {
+        if (id?.length > 10) {
             let dbPokemons = await getDbInfo()
             if (id) {
-                let pokemonId = await dbPokemons.filter(e => e.id == id)
-                pokemonId.length ?
+                let pokemonId = await dbPokemons?.filter(e => e.id == id)
+                pokemonId?.length ?
                     res.status(200).send(pokemonId) :
                     res.status(404).send("Pokemon not found")
             }

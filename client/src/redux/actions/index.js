@@ -81,10 +81,3 @@ export function orderAttack(payload) {
         payload
     }
 }
-
-// export function cleanState(payload){
-//     return {
-//         type: 'CLEAN_STATE',
-//         payload
-//     }
-// }

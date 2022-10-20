@@ -88,8 +88,7 @@ export default function Home() {
 
     function handleClick(e) {
         e.preventDefault()
-        setCurrentPage(1)
-        dispatch(getPokemons())
+        document.location.reload()
     }
 
 
