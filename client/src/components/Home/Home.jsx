@@ -79,6 +79,7 @@ export default function Home() {
 
     //Orden attack
     function handleAttackSort(e) {
+        console.log(e.target.value)
         e.preventDefault()
         dispatch(orderAttack(e.target.value))
         setCurrentPage(1)
